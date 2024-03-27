@@ -52,7 +52,10 @@ div.header-line {
     background: blue;
 }
 
-/* tu fali */
+/* Content */
+.content{
+    line-height: 28px;
+}
 
 /* Tabovi */
 .tabs-container {
@@ -88,10 +91,10 @@ input[name="tab"]{
 
 
 /* Content area for tabs*/
-.tabs.content{
+.tab-content{
     position: relative;
     background: #eee;
-    width: calc(100% - 120px); /* Kalkuliramo sirinu u odnosu na isrinu koju smo definirali za sirinu menija */
+    width: calc(100%-120px); /* Kalkuliramo sirinu u odnosu na isrinu koju smo definirali za sirinu menija */
     min-height: 100vh;
     padding: 15px;
     float: left;
@@ -101,7 +104,7 @@ input[name="tab"]{
 }
 
 /* Prikazi tab kada je input oznacen sa checked */
-input[name="tab"]:checked + .tabs.content{
+input[name="tab"]:checked + .tab-content{
     display: block;
     animation: slide 0.5s forwards
 }
