@@ -1,0 +1,38 @@
+header {
+    display: block;
+}
+
+div.header-line {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 25rem;
+    background-color: white;
+    padding: 30px;
+    /* padding bottom 60px */
+    text-align: center;
+}
+
+.full-width-header {
+    position: relative;
+    margin: 0 -30px;
+    padding: .25rem 30px;
+    background: white;
+    color: black;
+    font-size: 1.125rem;
+}
+
+.full-width-header::before, .full-width-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 960px;
+    right: 100%;
+    background-color: red;
+}
+
+.full-width-header:after {
+    width: 960px;
+    left: 100%;
+    background: blue;
+}
